@@ -1,3 +1,7 @@
+---
+import { proyectos } from "../data/Portafolio";
+---
+
 <section class="bg-gray-800 text-white py-16">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-8 text-center">Mis Proyectos</h2>
@@ -6,17 +10,51 @@
       <!-- Proyecto 1 -->
       <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://via.placeholder.com/400x200"
+          src={proyectos[0].imagen}
           alt="Proyecto 1"
           class="w-full h-48 object-cover"
         />
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
+          <h3 class="text-xl font-semibold mb-2">{proyectos[0].titulo}</h3>
           <p class="text-gray-300 mb-4">
-            Descripción breve del proyecto. Lorem ipsum dolor sit amet.
+            {proyectos[0].descripcion}
           </p>
+          <div class="mb-4 flex justify-start gap-4">
+            <img
+              src={proyectos[0].icons.tecnologia1}
+              alt="HTML5"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[0].icons.tecnologia2}
+              alt="CSS3"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[0].icons.tecnologia3}
+              alt="Typescript"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[0].icons.tecnologia4}
+              alt="Angular"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[0].icons.tecnologia5}
+              alt="Angular"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[0].icons.tecnologia6}
+              alt="Angular"
+              class="w-6 h-6"
+            />
+          </div>
+
           <a
-            href="#"
+            href={proyectos[0].url}
+            target="_blank"
             class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
             >Ver Proyecto</a
           >
@@ -26,17 +64,45 @@
       <!-- Proyecto 2 -->
       <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://via.placeholder.com/400x200"
-          alt="Proyecto 2"
-          class="w-full h-48 object-cover"
-        />
+          src={proyectos[1].imagen}
+          alt="ProyectoEcommerce"
+          class="w-full h-48 object-cover"/>
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
+          <h3 class="text-xl font-semibold mb-2">{proyectos[1].titulo}</h3>
           <p class="text-gray-300 mb-4">
-            Descripción breve del proyecto. Lorem ipsum dolor sit amet.
+            {proyectos[1].descripcion}
           </p>
+          <div class="mb-4 flex justify-start gap-4">
+          <img
+              src={proyectos[1].icons.tecnologia1}
+              alt="HTML5"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[1].icons.tecnologia2}
+              alt="CSS3"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[1].icons.tecnologia3}
+              alt="JavaScript"
+              class="w-6 h-6"
+            />
+            <img
+              src={proyectos[1].icons.tecnologia4}
+              alt="React"
+              class="w-6 h-6"
+            />
+                <img
+              src={proyectos[1].icons.tecnologia5}
+              alt="TailwindCSS"
+              class="w-6 h-6"
+            />
+            
+            </div>
           <a
-            href="#"
+            href={proyectos[1].url}
+            target="_blank"
             class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
             >Ver Proyecto</a
           >
@@ -72,18 +138,19 @@
       <!-- Certificado 1 -->
       <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://via.placeholder.com/400x200"
+          src="../../src/assets/Introduccion a la agilidad.png"
           alt="Certificado 1"
           class="w-full h-48 object-cover"
         />
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Certificado 1</h3>
+          <h3 class="text-xl font-semibold mb-2">Introducción a la Agilidad</h3>
           <p class="text-gray-300 mb-4">
             Descripción breve del certificado o curso. Lorem ipsum dolor sit
             amet.
           </p>
           <a
-            href="#"
+            href="../../src/assets/diplomaAgilidad.pdf"
+            download="diplomaAgilidad.pdf"
             class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
             >Ver Certificado</a
           >
@@ -93,18 +160,19 @@
       <!-- Certificado 2 -->
       <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://via.placeholder.com/400x200"
+          src="../../src/assets/Introduccion Scrum.png"
           alt="Certificado 2"
           class="w-full h-48 object-cover"
         />
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Certificado 2</h3>
+          <h3 class="text-xl font-semibold mb-2">Introducción a Scrum</h3>
           <p class="text-gray-300 mb-4">
             Descripción breve del certificado o curso. Lorem ipsum dolor sit
             amet.
           </p>
           <a
-            href="#"
+            href="../../src/assets/diplomaScrum.pdf"
+            download="diplomaScrum.pdf"
             class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
             >Ver Certificado</a
           >
@@ -114,18 +182,88 @@
       <!-- Certificado 3 -->
       <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://via.placeholder.com/400x200"
+          src="../../src/assets/formulacion y evalucion de proyecto.png"
           alt="Certificado 3"
           class="w-full h-48 object-cover"
         />
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Certificado 3</h3>
+          <h3 class="text-xl font-semibold mb-2">
+            Formulación y evaluación de proyectos
+          </h3>
           <p class="text-gray-300 mb-4">
             Descripción breve del certificado o curso. Lorem ipsum dolor sit
             amet.
           </p>
           <a
-            href="#"
+            href="../../src/assets/Formulación y evaluación de proyectos.pdf"
+            download="Formulación y evaluación de proyectos.pdf"
+            class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
+            >Ver Certificado</a
+          >
+        </div>
+      </div>
+      <!-- Certificado 4-->
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src="../../src/assets/transformacion Digital.png"
+          alt="Certificado 4"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">
+            Transformación digital y evolución tecnológica
+          </h3>
+          <p class="text-gray-300 mb-4">
+            Descripción breve del certificado o curso. Lorem ipsum dolor sit
+            amet.
+          </p>
+          <a
+            href="../../src/assets/Transformación digital y evolución tecnológica.pdf"
+            download="Transformación digital y evolución tecnológica.pdf"
+            class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
+            >Ver Certificado</a
+          >
+        </div>
+      </div>
+      <!-- Certificado 5 -->
+
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src="../../src/assets/evaluador de procesos.png"
+          alt="Certificado 6"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Evaluador de procesos</h3>
+          <p class="text-gray-300 mb-4">
+            Descripción breve del certificado o curso. Lorem ipsum dolor sit
+            amet.
+          </p>
+          <a
+            href="../../src/assets/Evaluador de procesos.pdf"
+            download="evaluador de procesos.pdf"
+            class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
+            >Ver Certificado</a
+          >
+        </div>
+      </div>
+
+      <!-- Certificado 6 -->
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src="https://via.placeholder.com/400x200"
+          alt="Certificado 5"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">High School Diploma</h3>
+          <p class="text-gray-300 mb-4">
+            Descripción breve del certificado o curso. Lorem ipsum dolor sit
+            amet.
+          </p>
+          <a
+            href="../../src/assets/Evaluador de procesos.pdf"
+            download="evaluador de procesos.pdf"
             class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500"
             >Ver Certificado</a
           >
