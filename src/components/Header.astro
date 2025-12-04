@@ -5,29 +5,22 @@ import Cv from "../components/icons/Cv.astro";
 import {perfil} from "../data/Portafolio.js";
 ---
 
-<div class="min-h-screen bg-gray-900 text-white flex flex-col">
+<div class="min-h-screen bg-gray-900 text-white flex flex-col" id="acercaMi">
     <!-- Navbar -->
     <nav
         class="flex flex-col md:flex-row justify-between items-center gap-4 pt-10 px-6 md:px-32"
     >
-        <div class="text-2xl font-bold text-teal-400 mb-4 md:mb-0">
-            Portfolio
+        <div class="font-bold text-teal-400 text-4xl">
+            Portafolio
         </div>
-        <ul class="flex gap-6 mb-4 md:mb-0">
-            <li class="hover:text-teal-400 cursor-pointer">Home</li>
-            <li class="hover:text-teal-400 cursor-pointer">Projects</li>
-            <li class="hover:text-teal-400 cursor-pointer">Resume</li>
+        <ul class="flex gap-12 text-gray-400 text-2xl">
+            <li class="hover:text-teal-600 cursor-pointer"><a href="#acercaMi">Experencia</a></li>
+            <li class="hover:text-teal-600 cursor-pointer"><a href="#proyectos">Proyecto</a></li>
+            <li class="hover:text-teal-600 cursor-pointer"><a href="#certificado">Certificado</a></li>
+            <li class="hover:text-teal-600 cursor-pointer"><a href="#miContacto">Contacto</a></li>
+            
         </ul>
-        <div class="flex">
-            <input
-                type="text"
-                placeholder="Search..."
-                class="rounded-l px-3 py-1 text-black"
-            />
-            <button class="bg-teal-400 text-black px-3 py-1 rounded-r"
-                >Search</button
-            >
-        </div>
+      
     </nav>
     <!-- Hero Section -->
     <div
