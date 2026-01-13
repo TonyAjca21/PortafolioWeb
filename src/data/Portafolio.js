@@ -15,7 +15,7 @@ export const proyectos = [
     {
         titulo: "Concursos Publico UNAH",  
         descripcion: "Plataforma web para la gestión de concursos públicos en la Universidad Nacional Autónoma de Honduras (UNAH). Permite a los usuarios registrarse, postularse a concursos y gestionar sus aplicaciones de manera eficiente.",  
-        imagen: "/public/images/ConcursosUnah.png",
+        imagen: "/images/ConcursosUnah.png",
         url: "http://concursos-test.unah.edu.hn.s3-website-us-east-1.amazonaws.com/#/landing",
         icons:{
             tecnologia1: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
@@ -31,7 +31,7 @@ export const proyectos = [
     },
     {
      titulo: "Ecommerce - Tienda Virtual",
-    imagen: "/public/images/Ecommerse.png",
+    imagen: "/images/Ecommerse.png",
   descripcion: "Proyecto en desarrollo de una tienda virtual, donde se implementan funcionalidades de catálogo de productos, carrito de compras, autenticación de usuarios y gestión de pedidos. El proyecto utiliza tecnologías modernas para ofrecer un rendimiento óptimo y una experiencia de usuario responsiva.",
   icons: {
     tecnologia1: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
@@ -83,43 +83,43 @@ export const experiencia = [
   {
     titulo: "Introducción a la Agilidad",
     descripcion: "Descripción breve del certificado o curso. Lorem ipsum dolor sit amet.",
-    imagen: "/public/images/Introduccion a la agilidad.png",
-    archivo: "/public/images/diplomaAgilidad.pdf",
+    imagen: "/images/Introduccion a la agilidad.png",
+    archivo: "/images/diplomaAgilidad.pdf",
     nombreDescarga: "diplomaAgilidad.pdf"
   },
   {
     titulo: "Introducción a Scrum",
     descripcion: "Descripción breve del certificado o curso. Lorem ipsum dolor sit amet.",
-    imagen: "/public/images/Introduccion Scrum.png",
-    archivo: "/public/images/diplomaScrum.pdf",
+    imagen: "/images/Introduccion Scrum.png",
+    archivo: "/images/diplomaScrum.pdf",
     nombreDescarga: "diplomaScrum.pdf"
   },
   {
     titulo: "Formulación y evaluación de proyectos",
     descripcion: "Descripción breve del certificado o curso. Lorem ipsum dolor sit amet.",
-    imagen: "/public/images/formulacion y evalucion de proyecto.png",
-    archivo: "/public/images/Formulación y evaluación de proyectos.pdf",
+    imagen: "/images/formulacion y evalucion de proyecto.png",
+    archivo: "/images/Formulación y evaluación de proyectos.pdf",
     nombreDescarga: "Formulación y evaluación de proyectos.pdf"
   },
   {
     titulo: "Transformación digital y evolución tecnológica",
     descripcion: "Descripción breve del certificado o curso. Lorem ipsum dolor sit amet.",
-    imagen: "/public/images/transformacion Digital.png",
-    archivo: "/public/images/Transformación digital y evolución tecnológica.pdf",
+    imagen: "/images/transformacion Digital.png",
+    archivo: "/images/Transformación digital y evolución tecnológica.pdf",
     nombreDescarga: "Transformación digital y evolución tecnológica.pdf"
   },
   {
     titulo: "Evaluador de procesos",
     descripcion: "Descripción breve del certificado o curso. Lorem ipsum dolor sit amet.",
-    imagen: "/public/images/evaluador de procesos.png",
-    archivo: "/public/images/Evaluador de procesos.pdf",
+    imagen: "/images/evaluador de procesos.png",
+    archivo: "/images/Evaluador de procesos.pdf",
     nombreDescarga: "evaluador de procesos.pdf"
   },
   {
     titulo: "High School Diploma",
     descripcion: "Descripción breve del certificado o curso. Lorem ipsum dolor sit amet.",
     imagen: "https://via.placeholder.com/400x200",
-    archivo: "/public/images/Evaluador de procesos.pdf",
+    archivo: "/images/Evaluador de procesos.pdf",
     nombreDescarga: "evaluador de procesos.pdf"
   }
 ];
