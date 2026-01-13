@@ -6,66 +6,52 @@ import {perfil} from "../data/Portafolio.js";
 ---
 
 <div class="min-h-screen bg-gray-900 text-white flex flex-col" id="acercaMi">
-    <!-- Navbar -->
-    <nav
-        class="flex flex-col md:flex-row justify-between items-center gap-4 pt-10 px-6 md:px-32"
-    >
-        <div class="font-bold text-teal-400 text-4xl">
-            Portafolio
-        </div>
-        <ul class="flex gap-12 text-gray-400 text-2xl">
-            <li class="hover:text-teal-600 cursor-pointer"><a href="#acercaMi">Experencia</a></li>
-            <li class="hover:text-teal-600 cursor-pointer"><a href="#proyectos">Proyecto</a></li>
-            <li class="hover:text-teal-600 cursor-pointer"><a href="#certificado">Certificado</a></li>
-            <li class="hover:text-teal-600 cursor-pointer"><a href="#miContacto">Contacto</a></li>
-            
-        </ul>
-      
-    </nav>
-    <!-- Hero Section -->
-    <div
-        class="flex flex-1 flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 md:gap-44 text-center md:text-left"
-    >
-        <!-- Texto -->
-        <div class="max-w-lg space-y-6">
-            <p class="text-gray-400">Hola, soy</p>
-            <h1 class="text-4xl md:text-5xl font-bold text-teal-400">
-                {perfil[0].nombre}
-            </h1>
-            <p class="text-gray-300">
-                {perfil[0].profesion}
-            </p>
-            <p class="text-gray-400 text-justify">
-                {perfil[0].descripcion}
-            </p>
 
-            <!-- Redes sociales -->
-            <div class="flex gap-4 justify-center md:justify-start">
-                <div
-                    class="bg-gray-800 hover:bg-teal-400 cursor-pointer p-3 rounded"
-                >
-                    <LinkedIn />
-                </div>
-                <div
-                    class="bg-gray-800 hover:bg-teal-400 cursor-pointer p-3 rounded"
-                >
-                    <GitHub />
-                </div>
-                <div
-                    class="bg-gray-800 hover:bg-teal-400 cursor-pointer p-3 rounded"
-                >
-                    <Cv />
-                </div>
-            </div>
-        </div>
-
-        <!-- Imagen -->
-        <div class="relative w-64 h-64 md:w-80 md:h-80">
-            <img
-                src="/images/tonyFoto.jfif"
-                alt="Foto"
-                class="w-full h-full object-cover rounded-full"
-            />
-        </div>
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center gap-4 pt-10 px-32 max-md:flex-col max-md:px-6">
+    
+    <div class="font-bold text-teal-400 text-4xl">
+      Portafolio
     </div>
+
+    <ul class="flex gap-12 text-gray-400 text-2xl max-md:flex-wrap max-md:justify-center max-md:gap-6 max-md:text-base">
+      <li class="hover:text-teal-600"><a href="#acercaMi">Experiencia</a></li>
+      <li class="hover:text-teal-600"><a href="#proyectos">Proyecto</a></li>
+      <li class="hover:text-teal-600"><a href="#certificado">Certificado</a></li>
+      <li class="hover:text-teal-600"><a href="#miContacto">Contacto</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+  <div class="flex flex-1 items-center justify-center px-20 gap-44 text-left 
+              max-md:flex-col max-md:px-6 max-md:gap-10 max-md:text-center">
+
+    <!-- TEXTO -->
+    <div class="max-w-lg space-y-6">
+      <p class="text-gray-400">Hola, soy</p>
+      <h1 class="text-5xl font-bold text-teal-400">{perfil[0].nombre}</h1>
+      <p class="text-gray-300">{perfil[0].profesion}</p>
+      <p class="text-gray-400 text-justify max-md:text-center">
+        {perfil[0].descripcion}
+      </p>
+
+      <div class="flex gap-4 max-md:justify-center">
+        <div class="bg-gray-800 hover:bg-teal-400 p-3 rounded"><LinkedIn /></div>
+        <div class="bg-gray-800 hover:bg-teal-400 p-3 rounded"><GitHub /></div>
+        <div class="bg-gray-800 hover:bg-teal-400 p-3 rounded"><Cv /></div>
+      </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="relative w-80 h-80 max-md:w-40 max-md:h-40">
+      <img
+        src="/images/tonyFoto.jfif"
+        alt="Foto"
+        class="w-full h-full object-cover rounded-full"
+      />
+    </div>
+
+  </div>
+
 </div>
