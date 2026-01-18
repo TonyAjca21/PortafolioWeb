@@ -47,84 +47,82 @@ import { proyectos, experiencia, certificados } from "../data/Portafolio";
     <h2 class="text-3xl font-bold mb-8 text-center">Mis Proyectos</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {
-        proyectos.map((proyecto, index) => (
-          <div
-            key={index}
-            class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            <img
-              src={proyecto.imagen}
-              alt={proyecto.titulo}
-              class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">{proyecto.titulo}</h3>
-              <p class="text-gray-300 mb-4">{proyecto.descripcion}</p>
+      {proyectos.map((proyecto, index) => (
+        <div
+          key={index}
+          class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl flex flex-col h-full"
+        >
+          <img
+            src={proyecto.imagen}
+            alt={proyecto.titulo}
+            class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">{proyecto.titulo}</h3>
+            <p class="text-gray-300 mb-4 flex-grow">{proyecto.descripcion}</p>
 
-              {/* Tecnologías */}
-              <div class="mb-4 flex flex-wrap gap-4">
-                {Object.keys(proyecto.icons).map((key, i) => (
-                  <img
-                    key={i}
-                    src={proyecto.icons[key]}
-                    alt={key}
-                    class="w-6 h-6 transform transition duration-300 hover:scale-125"
-                  />
-                ))}
-              </div>
-
-              {/* Botón */}
-              <a
-                href={proyecto.url || "#"}
-                target="_blank"
-                class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500 transition duration-300 hover:scale-105 inline-block"
-              >
-                Ver Proyecto
-              </a>
-
-              {/* Estado del proyecto (opcional) */}
-              {proyecto.estado && (
-                <p class="mt-2 text-sm text-gray-400 italic">
-                  {proyecto.estado}
-                </p>
-              )}
+            {/* Tecnologías */}
+            <div class="mb-4 flex flex-wrap gap-4">
+              {Object.keys(proyecto.icons).map((key, i) => (
+                <img
+                  key={i}
+                  src={proyecto.icons[key]}
+                  alt={key}
+                  class="w-6 h-6 transform transition duration-300 hover:scale-125"
+                />
+              ))}
             </div>
+
+            {/* Botón */}
+            <a
+              href={proyecto.url || "#"}
+              target="_blank"
+              class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500 transition duration-300 hover:scale-105 mt-auto text-center"
+            >
+              Ver Proyecto
+            </a>
+
+            {/* Estado del proyecto */}
+            {proyecto.estado && (
+              <p class="mt-2 text-sm text-gray-400 italic text-center">
+                {proyecto.estado}
+              </p>
+            )}
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
   </div>
-  <!-- Sección Certificados y Cursos -->
+
+  {/* Certificados */}
   <div class="max-w-6xl mx-auto px-6 mt-16" id="certificados">
     <h2 class="text-3xl font-bold mb-8 text-center">Certificados y Cursos</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {
-        certificados.map((certificado, index) => (
-          <div
-            key={index}
-            class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            <img
-              src={certificado.imagen}
-              alt={certificado.titulo}
-              class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">{certificado.titulo}</h3>
-              <p class="text-gray-300 mb-4">{certificado.descripcion}</p>
-              <a
-                href={certificado.archivo}
-                download={certificado.nombreDescarga}
-                class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500 transition duration-300 hover:scale-105"
-              >
-                Ver Certificado
-              </a>
-            </div>
+      {certificados.map((certificado, index) => (
+        <div
+          key={index}
+          class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl flex flex-col h-full"
+        >
+          <img
+            src={certificado.imagen}
+            alt={certificado.titulo}
+            class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">{certificado.titulo}</h3>
+            <p class="text-gray-300 mb-4 flex-grow">{certificado.descripcion}</p>
+
+            <a
+              href={certificado.archivo}
+              download={certificado.nombreDescarga}
+              class="bg-teal-400 text-black px-4 py-2 rounded hover:bg-teal-500 transition duration-300 hover:scale-105 mt-auto text-center"
+            >
+              Ver Certificado
+            </a>
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
   </div>
 </section>
