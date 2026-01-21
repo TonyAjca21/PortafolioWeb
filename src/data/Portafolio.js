@@ -7,7 +7,7 @@ export const perfil = [{
   descripcion: "Egresado de licenciatura en informática administrativa en la Universidad Nacional Autónoma De Honduras con conocimientos en desarrollo de aplicaciones web, especialmente en frontend, y habilidades en diseño gráfico. Apasionado por crear experiencias digitales atractivas y funcionales.",
   ubicacion: "Tegucigalpa, Honduras",
   email: "ajcasavila2006@gmail.com",
-  telefono: "+504 9956-1234",
+  telefono: "+504 9926-8791",
   Cv: "/images/CV_Anthony_Castro_Avila.pdf"
 
 }]
@@ -58,7 +58,7 @@ export const proyectos = [
       "tecnologia4": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg"
     },
    
-    "url": "https://lunas-snack-bar-landing.vercel.app/"
+    "url": "https://lunas-snack-bar.vercel.app/"
   }
 
 
