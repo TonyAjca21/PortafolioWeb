@@ -4,7 +4,7 @@ import Cv from "../components/icons/Cv.astro";
 export const perfil = [{
   nombre: "Anthony Castro",
   profesion: "Licenciado En Informatica En Administrativa",
-  descripcion: "Egresado de licenciatura en informática administrativa en la Universidad Nacional Autónoma De Honduras con conocimientos en desarrollo de aplicaciones web, especialmente en frontend, y habilidades en diseño gráfico. Apasionado por crear experiencias digitales atractivas y funcionales.",
+  descripcion: "Egresado de Licenciatura en Informática Administrativa en la Universidad Nacional Autónoma de Honduras, con conocimientos en análisis, diseño y desarrollo de aplicaciones web, tanto en frontend como en backend. Apasionado por aprender y crear soluciones digitales funcionales.",
   ubicacion: "Tegucigalpa, Honduras",
   email: "ajcasavila2006@gmail.com",
   telefono: "+504 9926-8791",
